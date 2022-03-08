@@ -40,12 +40,19 @@ export const Album = (props) => {
       </div>
 
       <div className="artists">
-        {props.album.artists.map((data) => {
+        {props.album.artists.map((data, index) => {
           return (
-            <Artist
+            <span><Artist
               artistName={data.name}
               artistLink={data.external_urls.spotify}
             />
+
+            {
+                //ternary operator. the first part is the condition, the second is what happens if the condition is true and the third one if the condition is false
+                index!=props.album.artists.length-1 ? ', ':''
+            }
+
+            </span>
           );
         })}
       </div>
