@@ -13,5 +13,5 @@ Every project should be deployed somewhere. Be sure to include the link to the d
 
 
 ## Iteration 2
-1. Figure out how to show 1 image for each album 
+1̶.̶ F̶i̶g̶u̶r̶e̶ o̶u̶t̶ h̶o̶w̶ t̶o̶ s̶h̶o̶w̶ 1̶ i̶m̶a̶g̶e̶ f̶o̶r̶ e̶a̶c̶h̶ a̶l̶b̶u̶m̶ 
 2. Figure out how to separate artists with comma.
