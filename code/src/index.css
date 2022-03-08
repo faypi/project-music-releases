@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.albumSection{
+  display: flex;
+}
+
+.album {
+  /* display: flex; */
+border: 3px solid black;
+}
+
+.artists {
+  border: 1px solid red;
+}
