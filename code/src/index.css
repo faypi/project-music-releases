@@ -14,6 +14,7 @@ code {
 
 .albumSection{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .album {
