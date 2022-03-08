@@ -24,7 +24,7 @@ export const Album = (props) => {
                 href={props.album.external_urls.spotify}
                 target="_blank"
               >
-                <div className="Icons">
+                <div className="icons">
                   <Icons />
                 </div>
                 <img
