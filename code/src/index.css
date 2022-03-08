@@ -27,7 +27,7 @@ code {
 .artists {
   border: 1px solid red;
 }
-.artists a {
+.artist a {
   color: white;
   text-decoration: none;
 }
