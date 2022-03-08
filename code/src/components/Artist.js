@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Artist = (props) => {
-    return (
-            <div>
-                Artist = {props.artist.name}
-            </div>
-    )
-}
+  return (
+    <a href={props.artistLink} target="_blank">
+      {props.artistName}
+    </a>
+  );
+};
