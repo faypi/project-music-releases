@@ -7,8 +7,9 @@ import { Album } from "components/Album";
 // console.log(data);
 export const App = () => {
   return (
-    <div>
-      <div className="albumSection">
+    <div class="outer-container">   
+    <div class="title-container">New Albums & singles</div>
+      <div className="album-section">
         {data.albums.items.map((data) => {
           return <Album album={data} />;
         })}
