@@ -111,3 +111,36 @@ code {
     font-weight: bold;
     font-size: 18px;
 }
+
+
+.footer {
+  color: #ffffff;
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px;
+  border-bottom: 1px solid #252525;
+
+
+}
+
+.footer a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.footer p {
+  text-align: center;
+}
+
+
+@media (min-width: 1025px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
