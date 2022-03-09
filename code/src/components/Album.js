@@ -46,6 +46,7 @@ export const Album = (props) => {
         >
           <p className="album">{props.album.name}</p>
         </a>
+        ''
       </div>
 
       <div className="artists">
