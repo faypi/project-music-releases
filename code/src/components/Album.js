@@ -6,7 +6,7 @@ import { Icons } from "./Icons";
 export const Album = (props) => {
   return (
     <div className="album">
-      <div className="image">
+      <div className="album-image">
         {props.album.images
           .filter((data) => {
             if (data.width === 300) {
@@ -17,20 +17,17 @@ export const Album = (props) => {
             return false;
           })
           .map((data) => {
-            console.log(data);
+            // console.log(data);
             return (
-              <a
-                className="album-link"
-                href={props.album.external_urls.spotify}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="Icons">
+              <>
+                <div ClassName="image-container">
+                  <img src={data.url} alt="album" />
+                </div>
+
+                <div className="icons-container">
                   <Icons />
                 </div>
-                <div></div>
-                <img ClassName="image-container" src={data.url} alt="album" />
-              </a>
+              </>
             );
           })}
       </div>
@@ -44,17 +41,23 @@ export const Album = (props) => {
         >
           <p className="album">{props.album.name}</p>
         </a>
-        ''
       </div>
 
       <div className="artists">
-        {props.album.artists.map((data) => {
+        {props.album.artists.map((data, index) => {
           return (
-            <Artist
-              key={data.name}
-              artistName={data.name}
-              artistLink={data.external_urls.spotify}
-            />
+            <span className="artist">
+              <Artist
+                key={data.name}
+                artistName={data.name}
+                artistLink={data.external_urls.spotify}
+              />
+
+              {
+                //ternary operator. the first part is the condition, the second is what happens if the condition is true and the third one if the condition is false
+                index !== props.album.artists.length - 1 ? ", " : ""
+              }
+            </span>
           );
         })}
       </div>

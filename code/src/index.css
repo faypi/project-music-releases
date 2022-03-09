@@ -23,6 +23,8 @@ code {
 
 .album-image {
   position: relative;
+  width: 300px;
+  height: 300px;
   margin-top: 20px;
 }
 
@@ -42,31 +44,25 @@ code {
 
 .artist {
   color: white;
-  font-size: 14px;
-  font-family: Helvetica;
 }
 
 .artist a {
   color: inherit;
   text-decoration: none;
-  color: white;
 }
 
 .artist :hover {
   text-decoration: underline;
 }
-
-.album-link {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-  font-family: Helvetica;
-}
 .album-name {
   inline-size: 300px;
   overflow: hidden;
 }
+.album-link {
+  color: white;
+  text-decoration: none;
+}
+
 .album-link :hover {
   text-decoration: underline;
 }
