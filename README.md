@@ -1,11 +1,14 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is a page built with React using data from Spotify. The page shows new album and single releases.
+The project was a pair programming one and we worked with a lot of commits and PRs. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We built the project in different phases. 
+First we identified which components we needed. We decided to start with the App, Album and Artist components. We later created an Icon and a Footer component since we felt these were re usable. 
+
+After we got the data we needed from the API response we moved into CSS and specifically the Hover effects. 
+We ended the project with Flexbox and styling some more so the page followed the desired design.
 
 ## View it live
 
