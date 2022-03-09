@@ -23,16 +23,13 @@ export const Album = (props) => {
                 className="album-link"
                 href={props.album.external_urls.spotify}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="Icons">
                   <Icons />
                 </div>
                 <div></div>
-                <img
-                  ClassName="image-container"
-                  src={data.url}
-                  alt="album image"
-                />
+                <img ClassName="image-container" src={data.url} alt="album" />
               </a>
             );
           })}
@@ -43,6 +40,7 @@ export const Album = (props) => {
           className="album-link"
           href={props.album.external_urls.spotify}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <p className="album">{props.album.name}</p>
         </a>
