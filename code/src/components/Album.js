@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Artist } from "./Artist";
+import { Icons } from "./Icons";
 
 export const Album = (props) => {
   return (
@@ -23,7 +24,14 @@ export const Album = (props) => {
                 href={props.album.external_urls.spotify}
                 target="_blank"
               >
-                <img src={data.url} />{" "}
+                <div className="icons">
+                  <Icons />
+                </div>
+                <img
+                  ClassName="image-container"
+                  src={data.url}
+                  alt="album image"
+                />
               </a>
             );
           })}
@@ -43,6 +51,7 @@ export const Album = (props) => {
         {props.album.artists.map((data, index) => {
           return (
             <span><Artist
+              key={data.name}
               artistName={data.name}
               artistLink={data.external_urls.spotify}
             />
