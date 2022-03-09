@@ -4,7 +4,7 @@ import data from "./data.json";
 import { Album } from "components/Album";
 // import { Artist } from 'components/Artist';
 // console.log('my data')
-console.log(data);
+// console.log(data);
 export const App = () => {
   return (
     <div>
