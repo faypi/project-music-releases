@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background-color: #1d1d1d;
+  background-color: #191414;
 }
 
 code {
@@ -17,16 +17,13 @@ code {
 .albumSection {
   display: flex;
   flex-wrap: wrap;
-}
-
-.album {
-  border: 3px solid black;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
 .album-image {
   position: relative;
-  width: 300px;
-  height: 300px;
+  margin-top: 20px;
 }
 
 .icons-container {
@@ -43,18 +40,16 @@ code {
   transition: 0.3s;
 }
 
-.artists {
-  border: 1px solid red;
-}
-
 .artist {
   color: white;
-
+  font-size: 14px;
+  font-family: Helvetica;
 }
 
 .artist a {
   color: inherit;
   text-decoration: none;
+  color: white;
 }
 
 .artist :hover {
@@ -64,8 +59,14 @@ code {
 .album-link {
   color: white;
   text-decoration: none;
+  font-size: 14px;
+  display: block;
+  font-family: Helvetica;
 }
-
+.album-name {
+  inline-size: 300px;
+  overflow: hidden;
+}
 .album-link :hover {
   text-decoration: underline;
 }
@@ -85,7 +86,6 @@ code {
 }
 .icons-container:hover .icons {
   display: flex;
-
 }
 
 .icon {
@@ -105,4 +105,3 @@ code {
   transition: 0.25s ease-in-out;
   transform: scale(1.3);
 }
-
