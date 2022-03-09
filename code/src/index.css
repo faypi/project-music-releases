@@ -84,22 +84,22 @@ code {
   transform: translate(-50%, -50%);
 }
 .icons-container:hover .icons {
-  display: block;
+  display: flex;
 
 }
 
 .icon {
+  width: 30px;
   padding: 0 15px;
   z-index: 1;
   filter: brightness(0) invert(1);
 }
 
-.heart,
+/* .heart,
 .play,
 .dots {
   width: 30px;
-  padding: 5px;
-}
+} */
 
 .play:hover {
   transition: 0.25s ease-in-out;
