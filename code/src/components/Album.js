@@ -23,6 +23,7 @@ export const Album = (props) => {
                 className="album-link"
                 href={props.album.external_urls.spotify}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="icons">
                   <Icons />
@@ -30,7 +31,7 @@ export const Album = (props) => {
                 <img
                   ClassName="image-container"
                   src={data.url}
-                  alt="album image"
+                  alt="album"
                 />
               </a>
             );
@@ -42,6 +43,7 @@ export const Album = (props) => {
           className="album-link"
           href={props.album.external_urls.spotify}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <p className="album">{props.album.name}</p>
         </a>
@@ -58,7 +60,7 @@ export const Album = (props) => {
 
             {
                 //ternary operator. the first part is the condition, the second is what happens if the condition is true and the third one if the condition is false
-                index!=props.album.artists.length-1 ? ', ':''
+                index!==props.album.artists.length-1 ? ', ':''
             }
 
             </span>
