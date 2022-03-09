@@ -9,7 +9,7 @@ export const Album = (props) => {
       <div className="album-image">
         {props.album.images
           .filter((data) => {
-            if (data.width === 300) {
+            if (data.width === 640) {
               //if filter is true then it keeps the image and goes to the .map
               return true;
             }
@@ -20,7 +20,7 @@ export const Album = (props) => {
             // console.log(data);
             return (
               <>
-                <div ClassName="image-container">
+                <div className="image-container">
                   <img src={data.url} alt="album" />
                 </div>
 
@@ -39,7 +39,7 @@ export const Album = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="album">{props.album.name}</p>
+          <p>{props.album.name}</p>
         </a>
       </div>
 
