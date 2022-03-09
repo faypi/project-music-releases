@@ -19,13 +19,17 @@ export const Album = (props) => {
                     .map((data) => {
                         // console.log(data);
                         return (
-                                <><div className="icons-container">
-                                <Icons />
-                            </div><img
+                            <>
+                              <img
                                     ClassName="image-container"
                                     src={data.url}
-                                    alt="album" /></>
-                            
+                                    alt="album" />
+                            <div className="icons-container">
+                                <Icons />
+                            </div>
+                          
+                                    </>
+
                         );
                     })}
             </div>
