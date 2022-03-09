@@ -42,12 +42,9 @@ code {
   transition: 0.3s;
 }
 
-.artist {
-  color: white;
-}
-
 .artist a {
-  color: inherit;
+  font-size: 14px;
+  color: #a0a0a0;
   text-decoration: none;
 }
 
@@ -59,8 +56,9 @@ code {
   overflow: hidden;
 }
 .album-link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .album-link :hover {
