@@ -17,14 +17,13 @@ code {
 .album-section {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 }
 
 .album {
   flex: 0 0 23%;
-  padding: 15px;
+  padding: 10px;
 }
-
 .album-image {
   position: relative;
 }
@@ -71,7 +70,6 @@ code {
   text-decoration: underline;
 }
 
-
 .icons {
   display: none;
   position: absolute;
@@ -96,22 +94,20 @@ code {
 }
 
 .image-container img {
-  width:100%
+  width: 100%;
 }
-
 .outer-container {
-  padding: 30px;
+  padding-left: 10px;
 }
-
 .title-container {
   border-bottom: 1px solid #252525;
-    color: white;
-    margin: 0 16px;
-    padding-bottom: 14px;
-    font-weight: bold;
-    font-size: 18px;
+  color: white;
+  margin: 0 16px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  font-size: 18px;
 }
-
 
 .footer {
   color: #ffffff;
@@ -122,8 +118,6 @@ code {
   flex-direction: column;
   padding: 30px;
   border-bottom: 1px solid #252525;
-
-
 }
 
 .footer a {
@@ -134,7 +128,6 @@ code {
 .footer p {
   text-align: center;
 }
-
 
 @media (min-width: 1025px) {
   .footer {
