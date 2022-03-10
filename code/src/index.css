@@ -13,7 +13,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+h1 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
 .albumSection {
   display: flex;
   flex-wrap: wrap;

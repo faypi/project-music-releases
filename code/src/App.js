@@ -8,6 +8,7 @@ import { Album } from "components/Album";
 export const App = () => {
   return (
     <div>
+      <h1>New Albums & Singles</h1>
       <div className="albumSection">
         {data.albums.items.map((data) => {
           return <Album album={data} />;
