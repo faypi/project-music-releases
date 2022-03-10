@@ -17,6 +17,7 @@ code {
 .album-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .album {
@@ -95,7 +96,9 @@ code {
 .image-container img {
   width: 100%;
 }
-
+.outer-container {
+  padding-left: 10px;
+}
 .title-container {
   border-bottom: 1px solid #252525;
   color: white;
